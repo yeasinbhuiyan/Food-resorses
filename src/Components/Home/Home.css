@@ -1,0 +1,10 @@
+.home-container {
+
+    /* background-image: linear-gradient(to bottom, rgba(13, 15, 26, 0.603), rgba(0, 0, 0, 0.819)) , url('https://media.istockphoto.com/id/1316145932/photo/table-top-view-of-spicy-food.jpg?b=1&s=170667a&w=0&k=20&c=P3jIQq8gVqlXjd4kP2OrXYyzqEXSWCwwYtwrd81psDY='); */
+    background-image:linear-gradient(to bottom, rgba(26, 23, 13, 0.219), rgba(0, 0, 0, 0.584)) , url('../../../public/AdobeStock_210976505_Preview.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vh;
+    background-color: aquamarine;
+    height: calc(100vh);
+}
