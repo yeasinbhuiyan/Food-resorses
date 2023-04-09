@@ -1,6 +1,7 @@
 .navbar{
     background-color: rgba(216, 163, 16, 0.838);
     padding: 20px;
+    min-width: 100vh;
 
 }
 
