@@ -18,6 +18,7 @@ const Header = () => {
                     <NavLink className={({isActive})=> isActive ? 'text-white' : 'default'} to='/foods'>Food</NavLink>
                     <NavLink className={({isActive})=> isActive ? 'text-white' : 'default'} to='about'> About</NavLink>
                     <NavLink className={({isActive})=> isActive ? 'text-white' : 'default'} to='/login'>Login</NavLink>
+                    <NavLink className={({isActive})=> isActive ? 'text-white' : 'default'} to='/register'>Register</NavLink>
 
                 </div>
                 <div className='md:hidden'>
