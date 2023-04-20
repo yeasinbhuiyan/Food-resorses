@@ -12,6 +12,7 @@ import FoodDetails from './Components/Details/FoodDetails';
 import Login from './Components/Login&Register/Login';
 import Register from './Components/Login&Register/Register';
 import AuthProvider from './Components/Provider/AuthProvider';
+import PrivateProvider from './Components/Provider/PrivateProvider';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/foods',
-        element: <Foods></Foods>,
+        element: <PrivateProvider><Foods></Foods></PrivateProvider>,
         loader: () => fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=b')
 
       },
@@ -51,7 +52,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
-    
+
     <AuthProvider>
       <RouterProvider router={router} />
     </AuthProvider> 
