@@ -7,8 +7,9 @@ const Food = ({ food }) => {
     const { idMeal, strMeal, strInstructions, strMealThumb } = food
     return (
 
-        <div className="card w-full bg-base-100 shadow-xl">
-            <figure><img src={strMealThumb} alt="Shoes" /></figure>
+        <div className="rounded-xl md:rounded-t-3xl  w-full bg-base-100  shadow-xl">
+            <figure><img className='md:rounded-none md:p-0 p-5 mx-auto md:rounded-t-3xl rounded-full' src={strMealThumb}  /></figure>
+
             <div className="card-body">
 
 

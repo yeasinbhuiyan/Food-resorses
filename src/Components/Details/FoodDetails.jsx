@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import './FoodDetails.css'
 
 const FoodDetails = () => {
     const data = useLoaderData()
@@ -33,8 +34,8 @@ const FoodDetails = () => {
 
 
     return (
-        <div className="">
-            <div className='grid grid-cols-1 md:grid-cols-2 mx-auto'>
+        <div className="main-container">
+            <div className='grid grid-cols-1 md:grid-cols-2 mx-auto '>
 
                 <div className='rounded h-96 w-80 mt-20 mx-auto'>
                     <img src={strMealThumb} alt="" />

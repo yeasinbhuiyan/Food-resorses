@@ -1,22 +1,29 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
-import { updateProfile } from 'firebase/auth';
 
 const Register = () => {
-    const { createAccount,userName, auth } = useContext(AuthContext)
+    const { createAccount, userName, auth } = useContext(AuthContext)
+    const location = useLocation()
+    console.log(location);
+
+    const navigate = useNavigate()
     const handleRegister = (event) => {
         event.preventDefault()
+
+        const from = location.state?.from.pathname
+
         const form = event.target
         const name = form.name.value
         const email = form.email.value
         const password = form.password.value
-      
+
         createAccount(email, password)
             .then(result => {
                 const logged = result.user
-                console.log(logged)
-                userName(logged,name)
+                userName(name)
+                navigate(from)
+
             })
             .catch(error => {
                 console.log(error.message)

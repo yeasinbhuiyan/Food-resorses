@@ -13,7 +13,7 @@ const AuthProvider = ({ children }) => {
 
 
     const createAccount = (email, password) => {
-        return createUserWithEmailAndPassword(auth, email, password)
+        return createUserWithEmailAndPassword(auth,email, password)
     }
 
 
@@ -31,10 +31,12 @@ const AuthProvider = ({ children }) => {
 
     
 
-    const userName = (user,name) => {
-      return  updateProfile(user, {
+    const userName = (name) => {
+      return  updateProfile(auth.currentUser, {
             displayName: name
+            
         })
+        .then(()=> setUser((user)=>({...user,displayName: name})))
 
 
     }
@@ -48,7 +50,7 @@ const AuthProvider = ({ children }) => {
         })
 
 
-        return () => { unsubscribe }
+        return () => { unsubscribe ()}
 
     }, [])
 

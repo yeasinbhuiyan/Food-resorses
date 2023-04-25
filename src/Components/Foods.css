@@ -1,0 +1,14 @@
+.allFoods-container{
+    min-width: 100vh;
+    /* margin: auto ,0; */
+}
+
+
+.allFoods-container img{
+    width: 500px;
+    height: 450px;
+    /* padding: 40px; */
+    border-radius:0 ,0 , 20px;
+}
+
+
