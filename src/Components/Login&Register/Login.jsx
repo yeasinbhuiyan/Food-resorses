@@ -117,7 +117,7 @@ const Login = () => {
                         }
 
                         <div className="form-control mt-6">
-                            <button disabled={passwordError || emailError} className="btn btn-warning">Login</button>
+                            <button disabled={passwordError || emailError} className="btn btn-warning text-white">Login</button>
                         </div>
                         <p><small>Dont you have Account? <Link state={location.state} to='/register'>Register</Link></small></p>
                         {/* <p className='text-red-400'><small>{error}</small></p> */}

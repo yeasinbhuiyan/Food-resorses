@@ -11,15 +11,16 @@ const Foods = () => {
     <>
 
 
-      <div className='overflow-auto allFoods-container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 p-10'>
+      <div className='allFoods-container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 p-10'>
         {
 
           showAll ? allFoods.meals.map(food => <Food food={food}></Food>) :
             allFoods.meals.slice(0, 6).map(food => <Food food={food}></Food>)
         }
+
           {
         !showAll && <div className='text-center my-5'>
-          <button className='btn btn-warning' onClick={() => setShowAll(!showAll)}>Show All</button>
+          <button className='btn-warning ' onClick={() => setShowAll(!showAll)}>Show All</button>
         </div>
       }
 

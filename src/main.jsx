@@ -13,11 +13,15 @@ import Login from './Components/Login&Register/Login';
 import Register from './Components/Login&Register/Register';
 import AuthProvider from './Components/Provider/AuthProvider';
 import PrivateProvider from './Components/Provider/PrivateProvider';
+import About from './Components/About/About';
+import Help from './Components/Help/Help';
+import Error from './Components/Error/Error';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Main></Main>,
+    errorElement:<Error></Error>,
     children: [
       {
         path: '/',
@@ -28,6 +32,16 @@ const router = createBrowserRouter([
         path: '/foods',
         element: <PrivateProvider><Foods></Foods></PrivateProvider>,
         loader: () => fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=b')
+
+      },
+      {
+        path : '/about',
+        element:<About></About>
+
+      },
+      {
+        path : '/help',
+        element:<Help></Help>
 
       },
       {

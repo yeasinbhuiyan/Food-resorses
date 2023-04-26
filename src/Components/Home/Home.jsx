@@ -7,6 +7,8 @@ import reading3 from '../../assets/77322-food.json'
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 import './Home.css'
+import { Link } from 'react-router-dom';
+import { FaAdn, FaArrowRight, FaHatCowboySide } from 'react-icons/fa';
 const Home = () => {
 
     const sellsData = [
@@ -35,14 +37,15 @@ const Home = () => {
         <>
             <div className='home-container text-center mx-auto min-w-full'>
 
-                <div className='md:absolute lg:ms-0 md:mt-[8%] md:ms-[35%]'>
+                {/* <div className=' lg:ms-0 md:mt-[8%] md:ms-[35%]'> */}
+                <div className='main-container mx-auto absolute mt-[8%]'>
 
 
-                    <h1 className='text-7xl text-yellow-200 text-color'>Enjoy Our <br /> Delicious Food</h1>
+                    <h1 className='text-7xl text-color'>Enjoy Our <br /> Delicious Food</h1>
 
-                    <p className='text-yellow-500 text-center my-5 text-xl'>Plants and animals are the main source  of food for all the organisms on earth.  Food obtained from animals is the main source of protein  and include fish, milk, meat, poultry, and cheese. <br /> Whereas plants provide us with fruits and vegetables, which are an important br source of fibres, proteins and carbohydrates</p>
+                    <p className='text-yellow-500 px-10  text-center my-5 text-xl'>Plants and animals are the main source  of food for all the organisms on earth.  Food obtained from animals is the main source of protein  and include fish, milk, meat, poultry, and cheese. Whereas plants provide us with fruits and vegetables, which are an important br source of fibres, proteins and carbohydrates</p>
 
-                    <button className='btn-warning'> Buy now</button>
+                    <Link to='/foods' className='btn-warning'> See Food Item</Link>
 
                 </div>
                 {/* 
@@ -59,7 +62,7 @@ const Home = () => {
 
             </div>
 
-            <div className='grid grid-cols-1 lg:grid-cols-2'>
+            <div className='main-container grid grid-cols-1 lg:grid-cols-2'>
                 <div className=''>
                     <h1 className='text-color m-5 ps-10'>Top Three Selling Fast Food</h1>
                     <BarChart

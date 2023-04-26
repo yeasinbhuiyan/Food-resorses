@@ -1,5 +1,5 @@
 .navbar{
-    background-color: rgba(216, 163, 16, 0.838);
+   
     padding: 20px;
     min-width: 100vh;
     /* width: 100%; */
@@ -9,3 +9,9 @@
 .navbar a{
     margin-right: 15px;
 }
+
+/* 
+.header-color{
+    text-trnsp
+  
+} */
