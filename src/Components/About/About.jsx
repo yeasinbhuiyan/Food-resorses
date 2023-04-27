@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className='main-container p-16'>
       <div className='max-w-xl sm:mx-auto lg:max-w-2xl '>
-        <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12'>
+        <div data-aos="fade-up" className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12'>
           <h2 className='max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto'>
             <span className='relative inline-block'>
               <svg
@@ -29,9 +29,9 @@ const About = () => {
                   height='24'
                 />
               </svg>
-              <span className='relative'>A</span>
+              <span className=''></span>
             </span>{' '}
-            reader lives a thousand lives before he dies
+          <span className='ms-3'> A reader lives a thousand lives before he dies</span>
           </h2>
           <p className='text-base text-gray-700 md:text-lg'>
             Books are a uniquely portable magic. Books serve to show a man that
@@ -40,10 +40,10 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className='max-w-screen-xl sm:mx-auto'>
+      <div  className='max-w-screen-xl sm:mx-auto'>
         <div className='grid grid-cols-1 gap-16 row-gap-8 lg:grid-cols-2'>
           <div className='space-y-8'>
-            <div>
+            <div data-aos="fade-up">
               <p className='mb-4 text-xl font-medium'>
                 Books are a uniquely portable magic.
               </p>
@@ -57,7 +57,7 @@ const About = () => {
                 our duty to future generations.
               </p>
             </div>
-            <div>
+            <div data-aos="fade-up">
               <p className='mb-4 text-xl font-medium'>
                 The first mate and his Skipper too will do?
               </p>
@@ -73,7 +73,7 @@ const About = () => {
                 ones that became nothing.
               </p>
             </div>
-            <div>
+            <div data-aos="fade-up">
               <p className='mb-4 text-xl font-medium'>
                 Is the Space Pope reptilian!?
               </p>
@@ -84,8 +84,8 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className='space-y-8'>
-            <div>
+          <div  className='space-y-8'>
+            <div data-aos="fade-up">
               <p className='mb-4 text-xl font-medium'>
                 How much money you got on you?
               </p>
@@ -100,7 +100,7 @@ const About = () => {
                 Speed Racer. He's a demon on wheels.
               </p>
             </div>
-            <div>
+            <div data-aos="fade-up">
               <p className='mb-4 text-xl font-medium'>
                 Galaxies Orion's sword globular star cluster?
               </p>
@@ -113,7 +113,7 @@ const About = () => {
                 you're talking to, so let me clue you in.
               </p>
             </div>
-            <div>
+            <div data-aos="fade-up">
               <p className='mb-4 text-xl font-medium'>
                 When has justice ever been as simple as a rule book?
               </p>

@@ -37,16 +37,18 @@ const Home = () => {
         <>
             <div className='home-container text-center mx-auto min-w-full'>
 
-                {/* <div className=' lg:ms-0 md:mt-[8%] md:ms-[35%]'> */}
-                <div className='main-container mx-auto absolute mt-[8%]'>
+               
+                <div data-aos="fade-up" className='main-container my-auto mx-auto py-20'>
 
 
                     <h1 className='text-7xl text-color'>Enjoy Our <br /> Delicious Food</h1>
 
-                    <p className='text-yellow-500 px-10  text-center my-5 text-xl'>Plants and animals are the main source  of food for all the organisms on earth.  Food obtained from animals is the main source of protein  and include fish, milk, meat, poultry, and cheese. Whereas plants provide us with fruits and vegetables, which are an important br source of fibres, proteins and carbohydrates</p>
+                    <p className='text-yellow-500 px-10 p-color  text-center my-5 text-xl'>Plants and animals are the main source  of food for all the organisms on earth.  Food obtained from animals is the main source of protein  and include fish, milk, meat, poultry, and cheese. Whereas plants provide us with fruits and vegetables, which are an important br source of fibres, proteins and carbohydrates</p>
 
-                    <Link to='/foods' className='btn-warning'> See Food Item</Link>
+                    <div data-aos-duration="1000" data-aos-easing="ease"  data-aos="fade-down">
+                        <Link to='/foods' className='btn-warning'> See Food Item</Link>
 
+                    </div>
                 </div>
                 {/* 
                 <div>
@@ -63,7 +65,7 @@ const Home = () => {
             </div>
 
             <div className='main-container grid grid-cols-1 lg:grid-cols-2'>
-                <div className=''>
+                <div data-aos="fade-right" className=''>
                     <h1 className='text-color m-5 ps-10'>Top Three Selling Fast Food</h1>
                     <BarChart
                         width={500}

@@ -18,15 +18,14 @@ const Foods = () => {
             allFoods.meals.slice(0, 6).map(food => <Food food={food}></Food>)
         }
 
-          {
-        !showAll && <div className='text-center my-5'>
-          <button className='btn-warning ' onClick={() => setShowAll(!showAll)}>Show All</button>
+      </div>
+      {
+
+        !showAll && <div className='text-center main-container mb-10 mx-auto my-5'>
+          <button className='btn-warning' onClick={() => setShowAll(!showAll)}>Show All</button>
         </div>
       }
 
-      </div>
-
-    
     </>
   );
 };
