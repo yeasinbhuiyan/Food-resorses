@@ -50,7 +50,7 @@ const Header = () => {
 
                         </div>
 
-                        <div className='mb-5'>
+                        <div className='mb-5  p-6'>
                             {user ? <><span className='navbar-link font-semibold' > {user.displayName}</span> <button onClick={Logout} className='btn btn-xs'>Logout </button></> :
                                 <li className='my-2 list-none text-xl font-semibold'><NavLink className={({ isActive }) => isActive ? 'navbar-link' : 'text-black font-semibold'} to='/login'>Login</NavLink></li>}
                         </div>
@@ -61,7 +61,11 @@ const Header = () => {
                         <li className='my-2 list-none text-xl font-semibold'>
                             <NavLink className={({ isActive }) => isActive ? 'navbar-link' : 'text-black font-semibold'} to='/foods'>Food</NavLink></li>
                         <li className='my-2 list-none text-xl font-semibold'>
-                            <NavLink className={({ isActive }) => isActive ? 'navbar-link' : 'text-black font-semibold'} to='about'> About</NavLink>
+                            <NavLink className={({ isActive }) => isActive ? 'navbar-link' : 'text-black font-semibold'} to='/about'> About</NavLink>
+                        </li>
+                        <li className='my-2 list-none text-xl font-semibold'>
+                        <NavLink className={({ isActive }) => isActive ? 'navbar-link' : 'text-black font-semibold'} to='/help'> Help</NavLink>
+
                         </li>
 
                         <li className='my-2 list-none text-xl font-semibold'> <NavLink className={({ isActive }) => isActive ? 'text-white' : 'default'} to='/login'>Login</NavLink></li>
